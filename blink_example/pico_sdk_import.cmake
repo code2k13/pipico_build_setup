@@ -1,3 +1,6 @@
+# This file was copied from https://github.com/raspberrypi/pico-sdk/blob/master/pico_sdk_init.cmake
+# which is available under BSD-3-Clause license https://github.com/raspberrypi/pico-sdk/blob/master/LICENSE.TXT
+
 # This is a copy of <PICO_SDK_PATH>/external/pico_sdk_import.cmake
 
 # This can be dropped into an external project to help locate this SDK

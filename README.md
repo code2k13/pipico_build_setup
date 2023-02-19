@@ -35,4 +35,7 @@ CMAKE_ASM_COMPILE_OBJECT
 rm CMakeCache.txt 
 ```
 
+## Attribution
+The **pico_sdk_import.cmake** file used in the project is taken from [PiPico SDK repository](https://github.com/raspberrypi/pico-sdk/blob/master/pico_sdk_init.cmake), available under [BSD-3-Clause license](https://github.com/raspberrypi/pico-sdk/blob/master/LICENSE.TXT)
+
 
