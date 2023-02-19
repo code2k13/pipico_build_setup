@@ -2,7 +2,7 @@
 
 ## Run the docker image
 
-To proceed, you need to spawn a Docker container using the pipico_build_tool image that we built earlier and mount the **oled_example** directory from this repository as a volume.
+To proceed, you need to spawn a Docker container using the **pipico_build_tool** image that we built earlier and mount the **oled_example** directory from this repository as a volume.
 
 ```bash
 sudo docker run -it -v FULL_PATH/pipico_build_setup/oled_example:/app pipico_build_tool
@@ -42,6 +42,10 @@ make
 
 ## Copying the program to Pi Pico board
 
-After building the OLED example, you can locate the resulting **hello_world_oled.uf2** file in the **oled_example/build/** directory on your machine. This file can also be found inside the docker container at **app/build/hello_world_oled.uf2**. 
+After building the OLED example, you can locate the resulting **hello_world_oled.uf2** file in the **oled_example/build/** directory on your machine. This file can also be found inside the docker container at **app/build/hello_world_oled.uf2**. Be sure to connect Pi Pico to your LCD as detailed below (Pi Pico --> LCD):
+* GPIO2 --> SDA
+* GPIO3 --> SCL 
+* V3.3 out --> VCC 
+* GND --> GND 
 
 Once you have this file, connect your Pi Pico board to your computer by holding down the 'bootsel' button and releasing it once the board is connected. Then, all you need to do is copy the **hello_world_oled.uf2** file to your Pi Pico. If you have successfully transferred the file, you should see the OLED display showing **Hello World** and the board's LED blink.
