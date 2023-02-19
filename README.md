@@ -1,4 +1,4 @@
-# Compiling C/C++ code for Raspberry Pi Pico
+# Compiling C/C++ code for Pi Pico, the easy way !
 This repository provides a Dockerfile and detailed instructions that make compiling C/C++ programs for the Raspberry Pi Pico a straightforward process. The Dockerfile creates an image that allows you to compile programs for the Pi Pico from any operating system that has Docker installed. This eliminates the need to manually install packages, use OS-specific commands, or configure file paths. By using this Docker image, you can save a significant amount of time that would otherwise be spent on configuration and setup, enabling you to quickly start working on your Pi Pico project.
 
 
