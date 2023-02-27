@@ -26,10 +26,11 @@ should show some output like this:
 CMakeLists.txt  main.cxx  pico_sdk_import.cmake readme.md
 ``` 
 
-We will need the Eigen library for matrix multiplication in C++. So, we clone the library in the 'app' folder of the container.
+We will need the Eigen library for matrix multiplication in C++. So, we clone the library in the 'app' folder of the container. Also, we will  use the **pico-ssd1306** library from [David Schramm](https://github.com/daschr/pico-ssd1306) to show text on OLED dispaly , so let us fetch the source code of the two libraries from git
 
 ```bash
 git clone https://gitlab.com/libeigen/eigen.git
+git clone https://github.com/daschr/pico-ssd1306
 ```
 
 To build our program, we will first create a new directory called **build** in the container. Next, we will run **CMake** in this directory to generate the necessary makefile and configuration files. Finally, we will run the **make** command to build our program in the container.
