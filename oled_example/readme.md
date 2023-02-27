@@ -53,10 +53,5 @@ Ensure that the OLED display is connected to Pi Pico:
 
 ## Copying the program to Pi Pico board
 
-After building the OLED example, you can locate the resulting **hello_world_oled.uf2** file in the **oled_example/build/** directory on your machine. This file can also be found inside the docker container at **app/build/hello_world_oled.uf2**. Be sure to connect Pi Pico to your LCD as detailed below (Pi Pico --> LCD):
-* GPIO2 --> SDA
-* GPIO3 --> SCL 
-* V3.3 out --> VCC 
-* GND --> GND 
-
+After building the OLED example, you can locate the resulting **hello_world_oled.uf2** file in the **oled_example/build/** directory on your machine. This file can also be found inside the docker container at **app/build/hello_world_oled.uf2**. 
 Once you have this file, connect your Pi Pico board to your computer by holding down the 'bootsel' button and releasing it once the board is connected. Then, all you need to do is copy the **hello_world_oled.uf2** file to your Pi Pico. If you have successfully transferred the file, you should see the OLED display showing **Hello World** and the board's LED blink.
