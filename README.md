@@ -16,8 +16,9 @@ This creates a local docker image called **pipico_build_tool**.
 
  
 ## Compiling the examples using the docker image
-* [Steps for compiling blink_example](blink_example/readme.md) 
-* [Steps for compiling oled_example](oled_example/readme.md)  
+* [Steps for compiling blink_example](blink_example/readme.md) - Blinks onboard LED.
+* [Steps for compiling oled_example](oled_example/readme.md)  - Displays text on OLED display.
+* [Steps for compiling dino_names_example](dino_names_example/readme.md) - Generates random dinosaur names using a neural network and displays on OLED display.
 
 
 ## Troubleshooting

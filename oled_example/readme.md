@@ -40,6 +40,17 @@ cmake ..
 make
 ```
 
+## OLED Display Connections
+
+Ensure that the OLED display is connected to Pi Pico:
+
+| Display PIN         | Pi Pico Pin |
+|--------------|:-----:|
+| VCC |  VCC |
+| GND      |  GND |
+| SCL      |  GP3 |
+| SDA      |  GP2 |
+
 ## Copying the program to Pi Pico board
 
 After building the OLED example, you can locate the resulting **hello_world_oled.uf2** file in the **oled_example/build/** directory on your machine. This file can also be found inside the docker container at **app/build/hello_world_oled.uf2**. 

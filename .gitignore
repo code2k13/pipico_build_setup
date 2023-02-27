@@ -34,4 +34,10 @@
 
 oled_example/pico-ssd1206
 oled_example/build
+
 blink_example/build
+
+dino_names_example/build
+dino_names_example/eigen
+
+tmp
