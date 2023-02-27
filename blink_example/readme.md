@@ -37,6 +37,6 @@ make
 
 ## Copying the program to Pi Pico board
 
-After building the OLED example, you can locate the resulting **blink_example.uf2** file in the **blink_example/build/** directory on your machine. This file can also be found inside the docker container at **app/build/blink_example.uf2**. 
+After building the blink example, you can locate the resulting **blink_example.uf2** file in the **blink_example/build/** directory on your machine. This file can also be found inside the docker container at **app/build/blink_example.uf2**. 
 
-Once you have this file, connect your Pi Pico board to your computer by holding down the 'bootsel' button and releasing it once the board is connected. Then, all you need to do is copy the **blink_example.uf2** file to your Pi Pico. You should see the board's LED blink.
+Once you have this file, connect your Pi Pico board to your computer by holding down the 'bootsel' button and releasing it once the board is connected. Then, all you need to do is copy the **blink_example.uf2** file to your Pi Pico. Once done the board's LED should keep blinking.
