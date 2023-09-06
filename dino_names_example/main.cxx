@@ -372,9 +372,18 @@ int main() {
     std::size_t pos = output_str.find('\n');
     if (pos != std::string::npos && pos > 5) {
       ssd1306_clear(&disp);
-      ssd1306_draw_string(&disp, 8, 24, 1, output_str.substr(0, pos).c_str());
+      if (pos < 11) {
+        ssd1306_draw_string(&disp, 8, 24, 2, output_str.substr(0, pos).c_str());
+      } else {
+        std::string first_line = output_str.substr(0, 9);
+        first_line.push_back('-');
+        ssd1306_draw_string(&disp, 8, 18, 2, first_line.c_str());
+        ssd1306_draw_string(&disp, 8, 32, 2, output_str.substr(9, pos-9).c_str());
+      }
+      ssd1306_draw_string(&disp, 8, 50, 1, output_str.substr(0, pos).c_str());
       ssd1306_show(&disp);
-      sleep_ms(2500);
+      sleep_ms(4500);
+      ssd1306_clear(&disp);
     }
   }
 
